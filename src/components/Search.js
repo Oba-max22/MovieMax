@@ -8,7 +8,7 @@ const Search = () => {
     const [keyword, setKeyword] = useState('');
     let [result, setResult]= useState([]);
 
-    let url = "http://www.omdbapi.com/?type=movie&s=" + keyword + "&apikey=" + process.env.REACT_APP_MY_API_KEY;
+    let url = "https://www.omdbapi.com/?type=movie&s=" + keyword + "&apikey=" + process.env.REACT_APP_MY_API_KEY;
 
     useEffect(() => {
         async function fetchData() {

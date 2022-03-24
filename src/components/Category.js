@@ -9,7 +9,7 @@ const Category = ({name, titles}) => {
 
     useEffect(() => {
         async function fetchData() {
-            const response = await axios.all(titles.map((title) => axios.get('http://www.omdbapi.com/?type=movie&t=' + title + "&apikey=" + process.env.REACT_APP_MY_API_KEY)));
+            const response = await axios.all(titles.map((title) => axios.get('https://www.omdbapi.com/?type=movie&t=' + title + "&apikey=" + process.env.REACT_APP_MY_API_KEY)));
             return response;
         }
         fetchData()
