@@ -6,8 +6,6 @@ const Hero = () => {
 
     return(
         <Box bgImage={img}
-            bgPosition="center"
-            bgRepeat="no-repeat" 
             bgColor='blackAlpha.800' 
             w='100%'
             h='550px' 
